@@ -128,8 +128,8 @@ export default function Portfolio() {
                   aria-label="Curriculum"
                   rel="noreferrer"
                   target="_blank"
-                  download="WebFrontendSebastianGiraldo.pdf"
-                  href="/download/Web FullStack Developer.pdf"
+                  download="WebDeveloperSebastianGiraldo.pdf"
+                  href="/download/Web Developer.pdf"
                   className="flex items-center gap-2 bg-white/10 text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-white/20"
                 >
                   <FcFile />
