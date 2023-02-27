@@ -15,10 +15,10 @@ import Design from "@/components/Design";
 export default function Portfolio() {
   return (
     <>
-      <div className="w-full h-[40rem] lg:h-[38.8rem] flex flex-col justify-center items-center bg-[#161616] border-b border-white/5">
+      <div className="w-full h-[46rem] lg:h-[35.6rem] flex flex-col justify-center items-center bg-[#161616] border-b border-white/5">
         <div className="h-full w-full max-w-[60rem] relative">
           <Header />
-          <div className="w-full sm:h-[25.3rem] h-[20rem]  rounded-b-lg bg-gradient-to-t from-black/50 to-transparent flex items-end justify-end overflow-hidden">
+          <div className="w-full h-[22.7rem] rounded-b-lg bg-gradient-to-t from-black to-transparent flex items-end justify-end overflow-hidden">
             <Image
               className="w-full h-full object-cover"
               src="https://res.cloudinary.com/dovavvnjx/image/upload/v1677451999/banner_pvmpnf.jpg"
@@ -28,7 +28,7 @@ export default function Portfolio() {
               priority
             />
           </div>
-          <div className="w-full px-3 relative bg-[#161616]">
+          <div className="w-full relative bg-transparent">
             <div className="w-full flex-row lg:justify-between lg:flex">
               <div className="w-full flex flex-col lg:flex items-center gap-5 relative">
                 <a
@@ -36,7 +36,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/code-sebastian-giraldo/"
-                  className="absolute bottom-36 lg:bottom-5 lg:left-0 w-44 h-44 rounded-full flex items-center justify-center cursor-pointer border-4 border-[#242424]"
+                  className="absolute bottom-36 lg:bottom-5 lg:left-0 w-44 h-44 rounded-full flex items-center justify-center cursor-pointer border-4 border-[#161616]"
                 >
                   <Image
                     width={3000}
@@ -49,13 +49,13 @@ export default function Portfolio() {
                   <div className="absolute w-full h-full bg-white/5 rounded-full duration-100 hover:bg-white/10"></div>
                 </a>
                 <div className="flex flex-col gap-2 py-6 ml-0 mt-16 items-center lg:ml-16 lg:items-start lg:mt-0">
-                  <p className="text-white text-4xl font-bold">
+                  <p className="text-white text-4xl font-bold text-center">
                     Sebastián Giraldo
                   </p>
                   <p className="w-full text-white/60 font-medium text-base text-center lg:text-left">
                     Friends Developers
                   </p>
-                  <div className="flex">
+                  <div className="flex flex-wrap justify-center w-full lg:justify-start">
                     <Dev
                       image="/profile1.jpg"
                       title="Laura Andrea Gómez"
@@ -92,7 +92,7 @@ export default function Portfolio() {
                       lindedIn="https://www.linkedin.com/in/luciagonzalezlara/"
                     />
 
-                    <div className="bg-[#ff0e0e] relative group border border-[#313133] text-white w-8 h-8 rounded-full flex items-center justify-center duration-150 cursor-pointer hover:bg-[#ff4b4b]">
+                    <div className="bg-[#ff0e0e] relative group border border-[#313133] text-white w-7 h-7 rounded-full flex items-center justify-center duration-150 cursor-pointer hover:bg-[#ff4b4b]">
                       <FaDiscord />
                       <Tooltip
                         title="Omar Gonzales"
@@ -102,13 +102,14 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-              <div className="w-full justify-center pb-5 lg:w-1/2 flex lg:items-end lg:justify-end gap-2 lg:py-5">
+              <div className="w-full px-3 justify-center items-center pb-5 lg:w-1/2 flex lg:py-5">
+                <div className="w-80 flex flex-wrap gap-2 justify-center lg:w-60">
                 <a
                   aria-label="GitHub"
                   rel="noreferrer"
                   target="_blank"
                   href="https://github.com/codewithsebas"
-                  className="flex items-center gap-2 bg-white text-black py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-white/90"
+                  className="grow justify-center flex items-center gap-2 bg-white text-black py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-white/90"
                 >
                   <FaGithub />
                   <h2 className="font-medium text-sm">GitHub</h2>
@@ -118,7 +119,7 @@ export default function Portfolio() {
                   rel="noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/code-sebastian-giraldo/"
-                  className="flex items-center gap-2 bg-blue-600 text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-blue-500"
+                  className="grow justify-center flex items-center gap-2 bg-blue-600 text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-blue-500"
                 >
                   <FaLinkedin />
                   <h2 className="font-medium text-sm">LinkedIn</h2>
@@ -130,16 +131,17 @@ export default function Portfolio() {
                   target="_blank"
                   download="WebDeveloperSebastianGiraldo.pdf"
                   href="/download/Web Developer.pdf"
-                  className="flex items-center gap-2 bg-white/10 text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-white/20"
+                  className="grow justify-center flex items-center gap-2 bg-white/10 text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-white/20"
                 >
                   <FcFile />
                   <h2 className="font-medium text-sm">Curriculum</h2>
                 </a>
+                </div>
               </div>
             </div>
             <div className="w-full h-[1px] bg-white/10"></div>
             <div className=" flex items-center justify-start">
-              <ul className="text-white/60 font-medium text-lg flex gap-0">
+              <ul className="text-white/60 font-medium text-base flex gap-0">
                 <li className="text-blue-500 border-b-2 border-blue-500 duration-150 cursor-pointer py-3 px-4">
                   Projects
                 </li>
@@ -227,11 +229,11 @@ export default function Portfolio() {
                 <div className="flex justify-between px-4">
                   <button className="w-full flex justify-center items-center gap-2 text-blue-500 border-b-2 border-blue-500 duration-150 cursor-pointer py-3 px-4">
                     <RxHamburgerMenu className="text-xl" />
-                    <h1>Vista de lista</h1>
+                    <h1>Lista</h1>
                   </button>
                   <button className="w-full flex justify-center items-center gap-2 border-b-2 border-transparent text-white/60 hover:border-blue-500 duration-150 cursor-pointer py-3 px-4">
                     <RiLayoutGridFill className="text-xl" />
-                    <h1>Vista de cuadrícula</h1>
+                    <h1>Cuadrícula</h1>
                   </button>
                 </div>
               </div>
