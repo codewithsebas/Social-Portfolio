@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #111111;
+}
+
+html {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-scrollbar-thumb-background: #282828;
+	/* -webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none; */
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
