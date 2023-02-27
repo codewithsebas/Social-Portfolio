@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { RiMoreFill } from "react-icons/ri";
 import { BiWorld } from "react-icons/bi";
-import { Project } from "@/interface/Project.Interface";
+import { ProjectInterface } from "@/interface/Project.Interface";
 
-export default function Project({image, title, day, year, link}: Project) {
+export default function Project({image, title, day, year, link}: ProjectInterface) {
   return (
     <div className="flex flex-col gap-2 w-full bg-[#161616] rounded-md border border-white/5">
       <a

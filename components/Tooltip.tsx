@@ -12,7 +12,7 @@ export const Tooltip: FC<TooltipInterface> = ({
           <div className="w-2 h-2 -rotate-45 duration-150 bg-zinc-800 border-r border-t border-white/20"></div>
         </div>
         <a
-		className="hover:underline"
+          className="hover:underline"
           aria-label="Tooltip"
           rel="noreferrer"
           target="_blank"

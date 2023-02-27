@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { Design } from "@/interface/Design.Interface";
+import { DesignInterface } from "@/interface/Design.Interface";
 
 export default function Design({
   image,
   link,
-}: Design) {
+}: DesignInterface) {
   return (
     <div className="flex flex-col gap-2 w-full bg-[#161616] rounded-md border border-white/5">
       <a
