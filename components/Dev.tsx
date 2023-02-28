@@ -2,9 +2,13 @@ import { DevInterface } from "@/interface/Dev.Interface";
 import { Tooltip } from "./Tooltip";
 import Image from "next/image";
 
-export default function Dev({image, title, lindedIn}: DevInterface) {
+export default function Dev({ mode, image, title, lindedIn }: DevInterface) {
   return (
-    <div className="bg-[#424242] relative group border border-[#313133] w-7 h-7 rounded-full flex items-center justify-center duration-150 cursor-pointer hover:bg-[#4e4e4e]">
+    <div
+      className={`relative group border w-7 h-7 rounded-full flex items-center justify-center duration-200 cursor-pointer ${
+        mode ? "border-[#bdbdbd]" : "border-[#313133] "
+      }`}
+    >
       <Image
         width={3000}
         height={3000}
@@ -13,10 +17,7 @@ export default function Dev({image, title, lindedIn}: DevInterface) {
         src={image}
         alt="Profile"
       />
-      <Tooltip
-        title={title}
-        lindedIn={lindedIn}
-      />
+      <Tooltip mode={mode} title={title} lindedIn={lindedIn} />
     </div>
   );
 }

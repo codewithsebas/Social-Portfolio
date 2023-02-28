@@ -6,7 +6,7 @@ export default function Design({
   link,
 }: DesignInterface) {
   return (
-    <div className="flex flex-col gap-2 w-full bg-[#161616] rounded-md border border-white/5">
+    <div className="flex flex-col gap-2 w-full overflow-hidden rounded-md border border-zinc-500/20">
       <a
         aria-label="Design"
         rel="noreferrer"
@@ -20,7 +20,7 @@ export default function Design({
           priority
           src={image}
           alt=""
-          className="rounded-md object-cover w-full h-full"
+          className="object-cover w-full h-full"
         />
       </a>
     </div>
