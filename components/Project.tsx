@@ -29,7 +29,7 @@ export default function Project({
           priority
           src={image}
           alt=""
-          className="rounded-t-md object-cover w-full h-60 border-b border-white/5"
+          className="rounded-t-md object-cover object-top w-full h-60 border-b border-white/5"
         />
 
         <div className="flex items-center gap-3 py-2 px-3 ">

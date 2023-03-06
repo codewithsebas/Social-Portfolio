@@ -2,8 +2,32 @@ import { HiLocationMarker } from "react-icons/hi";
 import { RiLayoutGridFill } from "react-icons/ri";
 import { AiFillCode } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { FaDiscord, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaGitAlt,
+  FaPhp,
+} from "react-icons/fa";
 import { FcOpenedFolder, FcFile, FcBriefcase } from "react-icons/fc";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiTailwindcss,
+  SiMongodb,
+  SiMysql,
+  SiBitbucket,
+  SiJirasoftware,
+  SiBootstrap,
+  SiChakraui,
+  SiFigma,
+} from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 import { MdWork } from "react-icons/md";
 import Header from "../components/Header";
 import Image from "next/image";
@@ -86,13 +110,6 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                       mode={mode}
                       image="/profile3.jpg"
                       title="Jahzeel Santacruz"
-                      lindedIn="https://www.linkedin.com/in/jahzeelsantacruz/"
-                    />
-
-                    <Dev
-                      mode={mode}
-                      image="/profile4.jpg"
-                      title="Damaris Hernandez"
                       lindedIn="https://www.linkedin.com/in/jahzeelsantacruz/"
                     />
 
@@ -240,10 +257,10 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
 
         <div className="h-screen flex relative overflow-x-hidden items-start pr-3 pt-3 lg:px-0 gap-3 pb-3 ">
           <div
-            className={`flex absolute flex-col lg:flex-row items-start gap-3 overflow-hidden duration-150 ${
+            className={`flex absolute flex-col lg:flex-row items-start gap-3 overflow-hidden duration-200 ${
               menu === 1
                 ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-10"
+                : "opacity-0 -translate-x-20 pointer-events-none -z-30 fixed"
             }`}
           >
             <div className="w-full lg:w-3/4 flex flex-col gap-3">
@@ -312,10 +329,6 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   <Design
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524898/cretten2_tqgig7.webp"
                     link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524898/cretten2_tqgig7.webp"
-                  />
-                  <Design
-                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524970/soft_boapbs.webp"
-                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524970/soft_boapbs.webp"
                   />
                 </div>
               </div>
@@ -426,10 +439,10 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
           </div>
 
           <div
-            className={`flex absolute flex-col lg:flex-row items-start gap-3 overflow-hidden duration-150 ${
+            className={`flex absolute flex-col lg:flex-row items-start gap-3 overflow-hidden duration-200 ${
               menu === 2
                 ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-10"
+                : "opacity-0 translate-x-20 pointer-events-none -z-30 fixed"
             }`}
           >
             <div className="w-full lg:w-3/4 flex flex-col gap-3">
@@ -453,6 +466,27 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     for new opportunities to improve my skills and knowledge.
                   </p>
                 </div>
+                <h1 className="font-medium text-2xl">Skills</h1>
+                <div className="flex flex-wrap gap-3 text-3xl">
+                  <FaHtml5 className="cursor-pointer duration-150 hover:text-orange-400" />
+                  <FaCss3Alt className="cursor-pointer duration-150 hover:text-blue-300" />
+                  <SiJavascript className="cursor-pointer duration-150 hover:text-yellow-400" />
+                  <FaReact className="cursor-pointer duration-150 hover:text-blue-300" />
+                  <TbBrandNextjs className="cursor-pointer duration-150 hover:text-slate-300" />
+                  <SiTypescript className="cursor-pointer duration-150 hover:text-blue-500" />
+                  <FaNodeJs className="cursor-pointer duration-150 hover:text-green-500" />
+                  <FaPhp className="cursor-pointer duration-150 hover:text-blue-500" />
+                  <SiTailwindcss className="cursor-pointer duration-150 hover:text-blue-300" />
+                  <SiBootstrap className="cursor-pointer duration-150 hover:text-purple-300" />
+                  <SiChakraui className="cursor-pointer duration-150 hover:text-blue-300" />
+                  <SiFigma className="cursor-pointer duration-150 hover:text-purple-300" />
+                  <SiMongodb className="cursor-pointer duration-150 hover:text-green-500" />
+                  <SiMysql className="cursor-pointer duration-150 hover:text-blue-300" />
+                  <FaGitAlt className="cursor-pointer duration-150 hover:text-orange-400" />
+                  <FaGithub className="cursor-pointer duration-150 hover:text-slate-300" />
+                  <SiBitbucket className="cursor-pointer duration-150 hover:text-blue-500" />
+                  <SiJirasoftware className="cursor-pointer duration-150 hover:text-blue-300" />
+                </div>
               </div>
               <div
                 className={`w-full flex flex-col gap-3 md:rounded-md py-3 px-4 pb-5 border ${
@@ -462,7 +496,10 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                 }`}
               >
                 <h1 className="font-medium text-2xl">
-                  <span className="hover:underline cursor-pointer">Photos</span>
+                  <span className="hover:underline cursor-pointer">
+                    Building Library -{" "}
+                    <span className="text-orange-300">Prettyform</span>
+                  </span>
                 </h1>
                 <div className="w-full mt-1 flex flex-col gap-4">
                   <Design
@@ -474,7 +511,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
             </div>
             <div className="w-full flex flex-col gap-3 ">
               <div
-                className={`w-full  rounded-md border ${
+                className={`w-full md:rounded-md border ${
                   mode
                     ? "bg-white border-black/5"
                     : "bg-[#161616] border-white/5"
@@ -484,10 +521,46 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   <h1 className="font-semibold">Experience</h1>
                   <FcBriefcase />
                 </div>
+
+                <div
+                  className={`flex flex-col lg:flex-row justify-between px-4 border-t w-full md:rounded-md ${
+                    mode
+                      ? "bg-white border-black/5"
+                      : "bg-[#161616] border-white/5"
+                  }`}
+                >
+                  <button
+                    onClick={() => setGrid(false)}
+                    className={`w-full flex justify-center items-center gap-2 cursor-pointer py-3 px-4 border-b-2 ${
+                      grid
+                        ? "border-transparent hover:border-blue-500"
+                        : "text-blue-500 border-b-2 border-blue-500"
+                    }`}
+                  >
+                    <RxHamburgerMenu className="text-xl" />
+                    <h1>Lista</h1>
+                  </button>
+                  <button
+                    onClick={() => setGrid(true)}
+                    className={`w-full flex justify-center items-center gap-2 cursor-pointer py-3 px-4 border-b-2 ${
+                      grid
+                        ? "text-blue-500 border-b-2 border-blue-500"
+                        : "border-transparent hover:border-blue-500"
+                    }`}
+                  >
+                    <RiLayoutGridFill className="text-xl" />
+                    <h1>Cuadrícula</h1>
+                  </button>
+                </div>
               </div>
 
-              <div className="flex flex-col gap-3">
+              <div
+                className={`gap-3 ${
+                  grid ? "w-full grid grid-cols-2" : "flex flex-col"
+                }`}
+              >
                 <Experience
+                  grid={grid}
                   mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678135887/Captura_de_pantalla_2023-03-06_154946_crxg51.png"
                   title="FullStack Developer & UI/UX Designer"
@@ -496,6 +569,42 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   date="Feb 2021 - Feb 2022"
                   description="Technical support and web development, Full Stack for 1 year, helping them in 1 year, helping them in the development, to solve problems, doubts and to face the insecurities and frustrations that arose along the way. Develop Web App for people with disabilities disabilities, help and improve the family nucleus with the person with disabilities. Using programming languages such as JavaScript and PHP, as well as using a strong MySQL database."
                   techMain="PHP, HTML, CSS, JavaScript, React, MySQL"
+                />
+
+                <Experience
+                  grid={grid}
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678139447/Frame_24_dm0d9e.png"
+                  title="UI/UX Designer"
+                  company="Open Bootcamp"
+                  country="España"
+                  date="Sep 2022 - Nov 2022"
+                  description="The experience at Open Bootcamp was incredible, too much teamwork, development activities between teamwork, development activities between 3 or 4 people, so that the community gets people, for the community to get a real work experience. real work experience. I was in charge of designing the Apps that all the teams were assigned to develop. teams were assigned to develop."
+                  techMain="Figma"
+                />
+
+                <Experience
+                  grid={grid}
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678137594/Captura_de_pantalla_2023-03-06_161933_sqjmue.png"
+                  title="FullStack Developer & UI/UX Designer"
+                  company="Cattleya"
+                  country="Colombia"
+                  date="Oct 2022 - Actualmente"
+                  description="At Cattleya I have started working on a personal project for the company. for the company, which is my parents' company. The company develops in garments, clothing and sportswear creation. creation of sportswear. I am currently developing an Ecommerce, whose purpose is to improve the sales of the company, with online payment methods such as Stripe, Mercado Pago, PayPal."
+                  techMain="React, Next, Typescript, Node, MondoDB, Tailwindcss"
+                />
+
+                <Experience
+                  grid={grid}
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1673371513/web.psd4_gjk0ck.png"
+                  title="Frontend Developer & UI/UX Designer"
+                  company="Cretten"
+                  country="Colombia - Mexico"
+                  date="Oct 2022 - Actualmente"
+                  description="Cretten is a mini-company that I am developing with a great team of developers a great team of developers, colleagues from Colombia and Mexico. Colombia and Mexico. Cretten is a Web gaming platform. We are currently in development of design and programming."
+                  techMain="React, Vite, Typescript, Jest, Node, MondoDB, Tailwindcss"
                 />
               </div>
             </div>

@@ -1,4 +1,5 @@
 export interface ExperienceInterface {
+    grid: boolean
     mode: boolean
     image: string
     title: string
