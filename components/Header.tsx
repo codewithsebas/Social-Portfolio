@@ -7,9 +7,9 @@ import { ModeInterface } from "@/interface/Mode.Interface";
 const Header = ({ mode, setMode }: ModeInterface) => {
   return (
     <header
-      className={` border  flex justify-between items-center px-4 absolute w-full z-10 py-2 lg:py-2 duration-200 ${
+      className={` border  flex justify-between items-center px-4 absolute w-full z-10 py-2 lg:py-2 ${
         mode
-          ? "bg-[#f0f0f0] border-black/10 text-zinc-700"
+          ? "bg-white border-black/10 text-zinc-700"
           : "bg-[#161616] border-white/10 text-white"
       }`}
     >
@@ -25,9 +25,9 @@ const Header = ({ mode, setMode }: ModeInterface) => {
           <h1 className="font-bold text-xl ">Portfolio</h1>
         </div>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1">
         <div
-          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center duration-150 cursor-pointer ${
+          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${
             mode
               ? "bg-[#e2e2e2] text-zinc-700 border border-black/10 hover:bg-[#d3d3d3]"
               : "bg-[#2c2c2c] text-zinc-100 border border-white/10 hover:bg-[#4e4e4e]"
@@ -36,7 +36,7 @@ const Header = ({ mode, setMode }: ModeInterface) => {
           <AiOutlinePlus />
         </div>
         <div
-          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center duration-150 cursor-pointer ${
+          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${
             mode
               ? "bg-[#e2e2e2] text-zinc-700 border border-black/10 hover:bg-[#d3d3d3]"
               : "bg-[#2c2c2c] text-zinc-100 border border-white/10 hover:bg-[#4e4e4e]"
@@ -46,7 +46,7 @@ const Header = ({ mode, setMode }: ModeInterface) => {
         </div>
         <div
           onClick={() => setMode(!mode)}
-          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center duration-150 cursor-pointer ${
+          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${
             mode
               ? "bg-[#e2e2e2] text-zinc-700 border border-black/10 hover:bg-[#d3d3d3]"
               : "bg-[#2c2c2c] text-zinc-100 border border-white/10 hover:bg-[#4e4e4e]"
