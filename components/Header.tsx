@@ -1,4 +1,4 @@
-import { RiMessengerFill } from "react-icons/ri";
+import { RiPhoneFill } from "react-icons/ri";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { AiOutlinePlus } from "react-icons/ai";
 import Image from "next/image";
@@ -26,24 +26,19 @@ const Header = ({ mode, setMode }: ModeInterface) => {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <div
+        <a
+          aria-label="Contact"
+          rel="noreferrer"
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=3152058712&text=Hola,%20Sebasti%C3%A1n%20buenos%20d%C3%ADas,%20%20te%20escribo%20por%20que%20aplicaste%20a%20una%20oferta%20laboral%20por%20medio%20del%20LinkedIn"
           className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${
             mode
               ? "bg-[#e2e2e2] text-zinc-700 border border-black/10 hover:bg-[#d3d3d3]"
               : "bg-[#2c2c2c] text-zinc-100 border border-white/10 hover:bg-[#4e4e4e]"
           }`}
         >
-          <AiOutlinePlus />
-        </div>
-        <div
-          className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${
-            mode
-              ? "bg-[#e2e2e2] text-zinc-700 border border-black/10 hover:bg-[#d3d3d3]"
-              : "bg-[#2c2c2c] text-zinc-100 border border-white/10 hover:bg-[#4e4e4e]"
-          }`}
-        >
-          <RiMessengerFill />
-        </div>
+          <RiPhoneFill />
+        </a>
         <div
           onClick={() => setMode(!mode)}
           className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${

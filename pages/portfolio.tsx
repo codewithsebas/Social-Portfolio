@@ -183,7 +183,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     aria-label="LinkedIn"
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/in/code-sebastian-giraldo/"
+                    href="https://www.linkedin.com/in/codewithsebas/"
                     className="grow justify-center flex items-center gap-2 bg-blue-600 border-transparent text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-blue-500"
                   >
                     <FaLinkedin />
@@ -194,8 +194,8 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     aria-label="Curriculum"
                     rel="noreferrer"
                     target="_blank"
-                    download="WebDeveloperSebastianGiraldo.pdf"
-                    href="/download/Web Developer.pdf"
+                    download="FullStack Developer Joab Giraldo.pdf"
+                    href="/download/FullStack Developer Joab Giraldo.pdf"
                     className={`grow justify-center flex items-center gap-2  py-2 px-3 rounded-md cursor-pointer border ${
                       mode
                         ? "bg-white border text-zinc-700 hover:bg-white/20"
