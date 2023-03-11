@@ -41,14 +41,14 @@ export default function Experience({
         <div className="flex flex-wrap items-center gap-3 pt-3 pb-4 px-4">
           <div className="flex flex-col justify-between h-full gap-3">
             <h1 className="font-bold text-2xl">{title}</h1>
-            <div className="flex flex-wrap items-center">
+            <div className="flex flex-col items-start gap-1">
+              <h2 className="font-semibold text-xl">{company}</h2>
               <p className="flex items-center gap-3">
-                {country} - <BiWorld />
+                {country}<BiWorld />{date}
               </p>
-              <p>{date}</p>
             </div>
 
-            <p
+            {/* <p
               className={`border-t pt-3 ${
                 mode
                   ? "border-black/10 text-black/70"
@@ -56,16 +56,8 @@ export default function Experience({
               }`}
             >
               {grid ? null : description}
-            </p>
-            {grid ? null : (
-              <h1
-                className={`font-bold  rounded-md px-3 py-2 ${
-                  mode ? "bg-black/5" : "bg-white/5"
-                }`}
-              >
-                {techMain}
-              </h1>
-            )}
+            </p> */}
+            
           </div>
         </div>
       </a>

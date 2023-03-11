@@ -44,11 +44,11 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
   const [menu, setMenu] = useState(1);
   return (
     <div
-      className={`w-full h-full flex flex-col justify-center items-center border-b border-white/5 ${
+      className={`w-full h-full relative flex flex-col justify-start items-center border-b border-white/5 ${
         mode ? "bg-[#f8f8f8] text-zinc-700" : "bg-[#1b1b1b] text-zinc-50"
       }`}
     >
-      <div className="h-full w-full max-w-[60rem] relative">
+      <div className="w-full max-w-[60rem] relative">
         <Header mode={mode} setMode={setMode} />
         <div className="w-full h-full flex flex-col justify-center items-center">
           <div
@@ -65,7 +65,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
               priority
             />
           </div>
-          <div className="w-full relative bg-transparent">
+          <div className="w-full">
             <div className="w-full flex-row lg:justify-between lg:flex">
               <div className="w-full flex flex-col lg:flex items-center gap-5 relative">
                 <a
@@ -163,7 +163,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:justify-end justify-center items-center pb-5 lg:w-1/2 flex lg:py-5">
+              <div className="w-full h-full lg:justify-end justify-center items-center pb-5 lg:w-1/2 flex lg:py-5">
                 <div className="w-80 flex flex-wrap gap-2 justify-center px-2 lg:px-0 lg:w-60">
                   <a
                     aria-label="GitHub"
@@ -255,12 +255,12 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
           </div>
         </div>
 
-        <div className="h-screen flex relative overflow-x-hidden items-start pr-3 pt-3 lg:px-0 gap-3 pb-3 ">
+        <div className="h-full flex flex-col items-start pr-3 pt-3 lg:px-0 gap-3 pb-3 ">
           <div
-            className={`flex absolute flex-col lg:flex-row items-start gap-3 overflow-hidden duration-200 ${
+            className={`h-full flex flex-col lg:flex-row items-start gap-3 duration-200 ${
               menu === 1
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-20 pointer-events-none -z-30 fixed"
+                ? "opacity-100"
+                : "opacity-0 pointer-events-none hidden"
             }`}
           >
             <div className="w-full lg:w-3/4 flex flex-col gap-3">
@@ -271,7 +271,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     : "bg-[#161616] border-white/5"
                 }`}
               >
-                <h1 className="font-medium text-2xl">Detalles</h1>
+                <h1 className="font-medium text-2xl">Details</h1>
                 <div className="flex items-start gap-3">
                   <AiFillCode className="text-2xl" />
                   <p className="cursor-text font-semibold">
@@ -282,7 +282,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   <div className="w-full flex items-center gap-3 text-xl">
                     <HiLocationMarker className="text-2xl" />
                     <h1 className="flex gap-1 text-base">
-                      De <p className="font-semibold">Ibagué, Colombia</p>
+                      Of <p className="font-semibold">Ibagué, Colombia</p>
                     </h1>
                   </div>
 
@@ -322,14 +322,6 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524620/prettyform_jmzelz.webp"
                     link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524620/prettyform_jmzelz.webp"
                   />
-                  <Design
-                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524780/cretten_abzwqy.webp"
-                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524780/cretten_abzwqy.webp"
-                  />
-                  <Design
-                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524898/cretten2_tqgig7.webp"
-                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524898/cretten2_tqgig7.webp"
-                  />
                 </div>
               </div>
             </div>
@@ -360,7 +352,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     }`}
                   >
                     <RxHamburgerMenu className="text-xl" />
-                    <h1>Lista</h1>
+                    <h1>List</h1>
                   </button>
                   <button
                     onClick={() => setGrid(true)}
@@ -371,7 +363,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     }`}
                   >
                     <RiLayoutGridFill className="text-xl" />
-                    <h1>Cuadrícula</h1>
+                    <h1>Grid</h1>
                   </button>
                 </div>
               </div>
@@ -439,10 +431,10 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
           </div>
 
           <div
-            className={`flex absolute flex-col lg:flex-row items-start gap-3 overflow-hidden duration-200 ${
+            className={`flex flex-col lg:flex-row items-start gap-3 duration-200 ${
               menu === 2
                 ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-20 pointer-events-none -z-30 fixed"
+                : "opacity-0 translate-x-20 pointer-events-none -z-30 hidden"
             }`}
           >
             <div className="w-full lg:w-3/4 flex flex-col gap-3">
@@ -463,7 +455,11 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     I am passionate about Web Development, who treats his work
                     with a high level of professionalism. I consider myself a
                     responsible, respectful person and I am constantly looking
-                    for new opportunities to improve my skills and knowledge.
+                    for new opportunities to improve my skills and knowledge. <br /> <br />
+                    Currently, I am looking for my second job in the tech
+                    industry to be part of a team that develops innovative
+                    projects, apply my knowledge and further develop my skills
+                    and professional experience.
                   </p>
                 </div>
                 <h1 className="font-medium text-2xl">Skills</h1>
@@ -538,7 +534,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     }`}
                   >
                     <RxHamburgerMenu className="text-xl" />
-                    <h1>Lista</h1>
+                    <h1>List</h1>
                   </button>
                   <button
                     onClick={() => setGrid(true)}
@@ -549,7 +545,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     }`}
                   >
                     <RiLayoutGridFill className="text-xl" />
-                    <h1>Cuadrícula</h1>
+                    <h1>Grid</h1>
                   </button>
                 </div>
               </div>
