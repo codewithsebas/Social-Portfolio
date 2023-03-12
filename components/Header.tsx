@@ -7,26 +7,27 @@ import { ModeInterface } from "@/interface/Mode.Interface";
 const Header = ({ mode, setMode }: ModeInterface) => {
   return (
     <header
-      className={` border  flex justify-between items-center px-4 absolute w-full z-10 py-2 lg:py-2 ${
+      className={`border flex flex-wrap justify-between items-center px-4 sticky w-full z-10 py-2 lg:py-2 ${
         mode
           ? "bg-white border-black/10 text-zinc-700"
           : "bg-[#161616] border-white/10 text-white"
       }`}
     >
       <div className="flex gap-2 items-center">
-        <div className="w-8 h-full flex gap-3 items-center">
+        <div className="w-full h-full flex gap-3 items-center">
           <Image
             width={100}
             height={100}
             priority
+            className="w-8"
             src="/favicon.svg"
             alt="Logo Facebook"
           />
-          <h1 className="font-bold text-xl ">Portfolio</h1>
+          <h1 className="font-bold text-xl">Social Portfolio</h1>
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <a
+        {/* <a
           aria-label="Contact"
           rel="noreferrer"
           target="_blank"
@@ -38,7 +39,7 @@ const Header = ({ mode, setMode }: ModeInterface) => {
           }`}
         >
           <RiPhoneFill />
-        </a>
+        </a> */}
         <div
           onClick={() => setMode(!mode)}
           className={`text-xl w-9 h-9 rounded-full flex items-center justify-center cursor-pointer ${

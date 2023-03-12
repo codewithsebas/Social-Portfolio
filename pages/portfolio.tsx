@@ -44,7 +44,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
   const [menu, setMenu] = useState(1);
   return (
     <div
-      className={`w-full h-full relative flex flex-col justify-start items-center border-b border-white/5 ${
+      className={`w-full relative flex flex-col justify-start items-center border-b border-white/5 ${
         mode ? "bg-[#f8f8f8] text-zinc-700" : "bg-[#1b1b1b] text-zinc-50"
       }`}
     >
@@ -73,7 +73,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   rel="noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/code-sebastian-giraldo/"
-                  className={`absolute bottom-36 lg:bottom-5 lg:left-0 w-44 h-44 rounded-full flex items-center justify-center cursor-pointer border-4 ${
+                  className={`absolute bottom-36 md:bottom-36 lg:bottom-5 lg:left-0 w-44 h-44 rounded-full flex items-center justify-center cursor-pointer border-4 ${
                     mode ? "border-[#f8f8f8]" : "border-[#1b1b1b]"
                   }`}
                 >
@@ -88,7 +88,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                   <div className="absolute w-full h-full bg-white/5 rounded-full duration-100 hover:bg-white/10"></div>
                 </a>
                 <div className="flex flex-col gap-2 py-6 ml-0 mt-16 items-center lg:ml-12 lg:items-start lg:mt-0">
-                  <p className=" text-4xl font-bold text-center">
+                  <p className="text-4xl font-bold text-center">
                     Sebastián Giraldo
                   </p>
                   <p
@@ -135,7 +135,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     />
 
                     <div
-                      className={`bg-[#ff0e0e] relative group border text-white w-7 h-7 rounded-full flex items-center justify-center cursor-pointer hover:bg-[#ff4b4b] ${
+                      className={`bg-[#ff0e0e] relative group border text-white w-8 h-8 rounded-full flex items-center justify-center cursor-pointer hover:bg-[#ff4b4b] ${
                         mode ? "border-[#bdbdbd]" : "border-[#313133]"
                       }`}
                     >
@@ -255,7 +255,7 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
           </div>
         </div>
 
-        <div className="h-full flex flex-col items-start pr-3 pt-3 lg:px-0 gap-3 pb-3 ">
+        <div className="h-full flex flex-col items-start pt-3 lg:px-0 gap-3 pb-3 ">
           <div
             className={`h-full flex flex-col lg:flex-row items-start gap-3 duration-200 ${
               menu === 1
@@ -445,43 +445,65 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                     : "bg-[#161616] border-white/5"
                 }`}
               >
-                <h1 className="font-medium text-2xl">About me</h1>
-                <div className="flex items-start gap-3">
-                  <p
-                    className={`cursor-text font-semibold ${
-                      mode ? "text-zinc-500" : "text-zinc-300"
-                    }`}
-                  >
-                    I am passionate about Web Development, who treats his work
-                    with a high level of professionalism. I consider myself a
-                    responsible, respectful person and I am constantly looking
-                    for new opportunities to improve my skills and knowledge. <br /> <br />
-                    Currently, I am looking for my second job in the tech
-                    industry to be part of a team that develops innovative
-                    projects, apply my knowledge and further develop my skills
-                    and professional experience.
-                  </p>
+                <div className="flex flex-col gap-1">
+                  <h1 className="font-medium text-2xl">About me</h1>
+                  <div className="flex items-start gap-3">
+                    <p
+                      className={`cursor-text font-semibold ${
+                        mode ? "text-zinc-500" : "text-zinc-300"
+                      }`}
+                    >
+                      I am passionate about Web Development, who treats his work
+                      with a high level of professionalism. I consider myself a
+                      responsible, respectful person and I am constantly looking
+                      for new opportunities to improve my skills and knowledge.{" "}
+                      <br />
+                    </p>
+                  </div>
                 </div>
-                <h1 className="font-medium text-2xl">Skills</h1>
-                <div className="flex flex-wrap gap-3 text-3xl">
-                  <FaHtml5 className="cursor-pointer duration-150 hover:text-orange-400" />
-                  <FaCss3Alt className="cursor-pointer duration-150 hover:text-blue-300" />
-                  <SiJavascript className="cursor-pointer duration-150 hover:text-yellow-400" />
-                  <FaReact className="cursor-pointer duration-150 hover:text-blue-300" />
-                  <TbBrandNextjs className="cursor-pointer duration-150 hover:text-slate-300" />
-                  <SiTypescript className="cursor-pointer duration-150 hover:text-blue-500" />
-                  <FaNodeJs className="cursor-pointer duration-150 hover:text-green-500" />
-                  <FaPhp className="cursor-pointer duration-150 hover:text-blue-500" />
-                  <SiTailwindcss className="cursor-pointer duration-150 hover:text-blue-300" />
-                  <SiBootstrap className="cursor-pointer duration-150 hover:text-purple-300" />
-                  <SiChakraui className="cursor-pointer duration-150 hover:text-blue-300" />
-                  <SiFigma className="cursor-pointer duration-150 hover:text-purple-300" />
-                  <SiMongodb className="cursor-pointer duration-150 hover:text-green-500" />
-                  <SiMysql className="cursor-pointer duration-150 hover:text-blue-300" />
-                  <FaGitAlt className="cursor-pointer duration-150 hover:text-orange-400" />
-                  <FaGithub className="cursor-pointer duration-150 hover:text-slate-300" />
-                  <SiBitbucket className="cursor-pointer duration-150 hover:text-blue-500" />
-                  <SiJirasoftware className="cursor-pointer duration-150 hover:text-blue-300" />
+
+                <div className="flex flex-col gap-1">
+                  <h1 className="font-medium text-2xl">Skills</h1>
+                  <div className="flex flex-wrap gap-3 text-3xl">
+                    <FaHtml5 className="cursor-pointer duration-150 hover:text-orange-400" />
+                    <FaCss3Alt className="cursor-pointer duration-150 hover:text-blue-300" />
+                    <SiJavascript className="cursor-pointer duration-150 hover:text-yellow-400" />
+                    <FaReact className="cursor-pointer duration-150 hover:text-blue-300" />
+                    <TbBrandNextjs className="cursor-pointer duration-150 hover:text-slate-300" />
+                    <SiTypescript className="cursor-pointer duration-150 hover:text-blue-500" />
+                    <FaNodeJs className="cursor-pointer duration-150 hover:text-green-500" />
+                    <FaPhp className="cursor-pointer duration-150 hover:text-blue-500" />
+                    <SiTailwindcss className="cursor-pointer duration-150 hover:text-blue-300" />
+                    <SiBootstrap className="cursor-pointer duration-150 hover:text-purple-300" />
+                    <SiChakraui className="cursor-pointer duration-150 hover:text-blue-300" />
+                    <SiFigma className="cursor-pointer duration-150 hover:text-purple-300" />
+                    <SiMongodb className="cursor-pointer duration-150 hover:text-green-500" />
+                    <SiMysql className="cursor-pointer duration-150 hover:text-blue-300" />
+                    <FaGitAlt className="cursor-pointer duration-150 hover:text-orange-400" />
+                    <FaGithub className="cursor-pointer duration-150 hover:text-slate-300" />
+                    <SiBitbucket className="cursor-pointer duration-150 hover:text-blue-500" />
+                    <SiJirasoftware className="cursor-pointer duration-150 hover:text-blue-300" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h1 className="font-medium text-2xl">Languages</h1>
+                  <div className="flex items-start gap-3">
+                    <p
+                      className={`cursor-text font-semibold ${
+                        mode ? "text-zinc-500" : "text-zinc-300"
+                      }`}
+                    >
+                      Spanish - Native <br />
+                    </p>
+                    <p
+                      className={`cursor-text font-semibold ${
+                        mode ? "text-zinc-500" : "text-zinc-300"
+                      }`}
+                    >
+                      English - A2 / B1
+                      <br />
+                    </p>
+                  </div>
                 </div>
               </div>
               <div

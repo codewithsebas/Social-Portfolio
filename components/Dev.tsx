@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Dev({ mode, image, title, lindedIn }: DevInterface) {
   return (
     <div
-      className={`relative group border w-7 h-7 rounded-full flex items-center justify-center cursor-pointer ${
+      className={`relative group border w-8 h-8 rounded-full flex items-center justify-center cursor-pointer ${
         mode ? "border-[#bdbdbd]" : "border-[#313133] "
       }`}
     >

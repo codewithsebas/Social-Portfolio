@@ -7,7 +7,7 @@ export const Tooltip: FC<TooltipInterface> = ({
   lindedIn,
 }: TooltipInterface) => {
   return (
-    <div className="absolute w-12 h-[3.5rem] hidden sm:flex top-7 items-center duration-300 pointer-events-none group-hover:pointer-events-auto">
+    <div className="absolute w-12 h-[4rem] hidden sm:flex top-7 items-center duration-300 pointer-events-none group-hover:pointer-events-auto">
       <div
         className={`relative whitespace-nowrap rounded  border opacity-0 group-hover:opacity-100  px-3 py-1 text-base font-light  shadow-lg z-20 duration-200 ${
           mode
