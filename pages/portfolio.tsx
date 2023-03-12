@@ -160,6 +160,13 @@ export default function Portfolio({ mode, setMode }: ModeInterface) {
                       title="Camila Quimbaya"
                       lindedIn="https://www.linkedin.com/in/camila-quimbaya/"
                     />
+
+                    <Dev
+                      mode={mode}
+                      image="/profile11.jpg"
+                      title="Afor_Digital"
+                      lindedIn="youlinkedin"
+                    />
                   </div>
                 </div>
               </div>
