@@ -4,7 +4,7 @@ import {useState} from "react";
 
 export default function Home() {
 
-	const [mode, setMode] = useState(false)
+	const [mode, setMode] = useState(true)
 	
 	return (
 		<>
