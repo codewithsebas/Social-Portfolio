@@ -35,7 +35,7 @@ export default function Experience({
           priority
           src={image}
           alt="Experience"
-          className="rounded-t-md object-cover object-top w-full h-72 border-b border-white/5"
+          className="rounded-t-md object-cover object-top w-full h-full max-h-[30rem] border-b border-white/5"
         />
 
         <div className="flex flex-wrap items-center gap-3 pt-3 pb-4 px-4">
@@ -44,20 +44,21 @@ export default function Experience({
             <div className="flex flex-col items-start gap-1">
               <h2 className="font-semibold text-xl">{company}</h2>
               <p className="flex items-center gap-3">
-                {country}<BiWorld />{date}
+                {country}
+                <BiWorld />
+                {date}
               </p>
             </div>
 
-            {/* <p
+            <p
               className={`border-t pt-3 ${
                 mode
                   ? "border-black/10 text-black/70"
                   : "border-white/10 text-white/70"
               }`}
             >
-              {grid ? null : description}
-            </p> */}
-            
+              {description}
+            </p>
           </div>
         </div>
       </a>

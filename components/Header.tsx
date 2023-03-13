@@ -7,7 +7,7 @@ import { ModeInterface } from "@/interface/Mode.Interface";
 const Header = ({ mode, setMode }: ModeInterface) => {
   return (
     <header
-      className={`border flex flex-wrap justify-between items-center px-4 sticky w-full z-10 py-2 lg:py-2 ${
+      className={`border flex flex-wrap justify-between items-center px-4 w-full z-10 py-2 lg:py-2 ${
         mode
           ? "bg-white border-black/10 text-zinc-700"
           : "bg-[#161616] border-white/10 text-white"

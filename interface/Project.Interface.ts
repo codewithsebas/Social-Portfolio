@@ -3,6 +3,8 @@ export interface ProjectInterface {
     image: string
     title: string
     link: string
+    deploy?: string
     day: number
     year: number
+    description: string
 }
