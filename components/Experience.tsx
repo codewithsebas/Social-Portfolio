@@ -22,13 +22,7 @@ export default function Experience({
           : "bg-[#161616] border-zinc-500/20 md:hover:border-blue-500/50 hover:shadow-xl hover:bg-white/10"
       }`}
     >
-      <a
-        aria-label="Project"
-        rel="noreferrer"
-        target="_blank"
-        href={image}
-        className="w-full h-full rounded-md"
-      >
+      <div className="w-full h-full rounded-md cursor-pointer">
         <Image
           width={3000}
           height={3000}
@@ -50,7 +44,7 @@ export default function Experience({
               </p>
             </div>
 
-            <p
+            {/* <p
               className={`border-t pt-3 ${
                 mode
                   ? "border-black/10 text-black/70"
@@ -58,10 +52,10 @@ export default function Experience({
               }`}
             >
               {description}
-            </p>
+            </p> */}
           </div>
         </div>
-      </a>
+      </div>
     </div>
   );
 }
