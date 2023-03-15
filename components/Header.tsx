@@ -10,7 +10,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
     <>
       <div
         onClick={() => setMenuMobile(!menuMobile)}
-        className={`fixed w-full h-full z-20 duration-200 backdrop-blur-sm
+        className={`fixed w-full h-full z-20 duration-200
         ${menuMobile ? "opacity-100 overflow-y-hidden" : "opacity-0 pointer-events-none"}
          ${
            mode

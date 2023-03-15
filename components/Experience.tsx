@@ -16,20 +16,20 @@ export default function Experience({
 }: ExperienceInterface) {
   return (
     <div
-      className={`flex flex-col gap-2 w-full h-full rounded-md border duration-150 ${
+      className={`flex flex-col gap-2 w-full h-full md:rounded-md border duration-150 ${
         mode
           ? "bg-white text-zinc-700 border-black/5 md:hover:border-blue-500/50 hover:shadow-lg"
           : "bg-[#161616] border-zinc-500/20 md:hover:border-blue-500/50 hover:shadow-xl hover:bg-white/10"
       }`}
     >
-      <div className="w-full h-full rounded-md cursor-pointer">
+      <div className="w-full h-full md:rounded-md cursor-pointer">
         <Image
           width={3000}
           height={3000}
           priority
           src={image}
           alt="Experience"
-          className="rounded-t-md object-cover object-top w-full h-64 border-b border-white/5"
+          className="md:rounded-t-md object-cover object-top w-full h-64 border-b border-white/5"
         />
 
         <div className="flex flex-wrap items-center gap-3 pt-3 pb-4 px-4">

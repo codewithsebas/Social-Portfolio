@@ -657,7 +657,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   }`}
                 >
                   <div className="flex flex-col gap-1">
-                    <h1 className="font-medium text-2xl">Welcome to my Blog</h1>
+                    <h1 className="font-medium text-2xl">Blog that can help you</h1>
                     <div className="flex flex-col items-start gap-2">
                       <p
                         className={`cursor-text font-medium ${
