@@ -44,7 +44,7 @@ export default function Experience({
               </p>
             </div>
 
-            {/* <p
+            <p
               className={`border-t pt-3 ${
                 mode
                   ? "border-black/10 text-black/70"
@@ -52,7 +52,7 @@ export default function Experience({
               }`}
             >
               {description}
-            </p> */}
+            </p>
           </div>
         </div>
       </div>

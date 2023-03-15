@@ -3,7 +3,6 @@ import { BiWorld } from "react-icons/bi";
 import { ProjectInterface } from "@/interface/Project.Interface";
 import { FaGithub, FaTelegramPlane } from "react-icons/fa";
 
-
 export default function Project({
   mode,
   image,
@@ -16,20 +15,20 @@ export default function Project({
 }: ProjectInterface) {
   return (
     <div
-      className={`flex flex-col gap-2 w-full h-full rounded-md border cursor-pointer ${
+      className={`flex flex-col gap-2 w-full h-full md:rounded-md border cursor-pointer ${
         mode
           ? "bg-white text-zinc-700 border-black/5 hover:border-blue-500/50 hover:shadow-md"
           : "bg-[#161616] border-zinc-500/20 hover:border-blue-500/50 hover:shadow-xl hover:bg-white/10"
       }`}
     >
-      <div className="w-full h-full rounded-md">
+      <div className="w-full h-full md:rounded-md">
         <Image
           width={3000}
           height={3000}
           priority
           src={image}
           alt=""
-          className="rounded-t-md object-cover object-top w-full h-64 border-b border-white/5"
+          className="md:rounded-t-md object-cover object-top w-full h-64 border-b border-white/5"
         />
 
         <div className="flex items-center gap-3 py-4 px-4 ">
@@ -63,7 +62,7 @@ export default function Project({
                 )}
               </div>
             </div>
-            {/* <p
+            <p
               className={`border-t pt-3 ${
                 mode
                   ? "border-black/10 text-black/70"
@@ -71,7 +70,7 @@ export default function Project({
               }`}
             >
               {description}
-            </p> */}
+            </p>
           </div>
         </div>
       </div>
