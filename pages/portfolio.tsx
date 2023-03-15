@@ -55,7 +55,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
       <div className="w-full max-w-[60rem] relative">
         <Header mode={mode} setMode={setMode} menu={menu} setMenu={setMenu} />
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <div className="w-full h-[22.7rem] flex items-end justify-end overflow-hidden">
+          <div className="w-full h-[10rem] md:h-[22.7rem] flex items-end justify-end overflow-hidden">
             <Image
               className="w-full h-full object-cover"
               src="https://res.cloudinary.com/dovavvnjx/image/upload/v1677451999/banner_pvmpnf.jpg"
