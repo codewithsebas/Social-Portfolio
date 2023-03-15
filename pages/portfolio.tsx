@@ -486,6 +486,13 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     <div className="flex flex-wrap w-full lg:justify-start">
                       <Dev
                         mode={mode}
+                        image="/profile13.jpg"
+                        title="Jose Ramon Montes Hermida"
+                        lindedIn="https://www.linkedin.com/in/joseramonmontes/"
+                      />
+
+                      <Dev
+                        mode={mode}
                         image="/profile11.jpg"
                         title="Sara Montagud Rodríguez"
                         lindedIn="https://www.linkedin.com/in/sara-montagud-rodr%C3%ADguez/"
@@ -529,8 +536,15 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                       <Dev
                         mode={mode}
                         image="/profile12.jpg"
-                        title="Cecilia Ines"
+                        title="Ines Castañeda"
                         lindedIn="www.linkedin.com/in/ines-castañeda-886a46212"
+                      />
+
+                      <Dev
+                        mode={mode}
+                        image="/profile14.jpg"
+                        title="Omar González Cuen"
+                        lindedIn="https://www.linkedin.com/in/orglez/"
                       />
                     </div>
                   </div>
@@ -657,7 +671,9 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   }`}
                 >
                   <div className="flex flex-col gap-1">
-                    <h1 className="font-medium text-2xl">Blog that can help you</h1>
+                    <h1 className="font-medium text-2xl">
+                      Blog that can help you
+                    </h1>
                     <div className="flex flex-col items-start gap-2">
                       <p
                         className={`cursor-text font-medium ${
