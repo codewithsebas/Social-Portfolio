@@ -55,7 +55,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
       <div className="w-full max-w-[60rem] relative">
         <Header mode={mode} setMode={setMode} menu={menu} setMenu={setMenu} />
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <div className="w-full h-[10rem] md:h-[22.7rem] flex items-end justify-end overflow-hidden">
+          <div className="w-full h-[15rem] md:h-[22.7rem] flex items-end justify-end overflow-hidden">
             <Image
               className="w-full h-full object-cover"
               src="https://res.cloudinary.com/dovavvnjx/image/upload/v1677451999/banner_pvmpnf.jpg"
@@ -100,7 +100,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                       mode ? "text-black/60" : "text-white"
                     }`}
                   >
-                    Frontend Developer | Web Programming | React ⭐
+                    Frontend Developer | Web Programming | Design ⭐
                   </p>
                 </div>
               </div>
@@ -181,8 +181,20 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     link="https://www.figma.com/file/GZ4iUAXavkjrATwmezaR3d/StudioGhibli-Design?node-id=0%3A1&t=OOAdkNqnnXBZATLx-1"
                   />
                   <Design
-                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524970/soft_boapbs.webp"
-                    link="https://www.figma.com/file/VXejk3ciaoR4C04dviIU3l/Nuestra-empresa?node-id=0%3A1&t=Qj6Azjw1Do8EfOiU-1"
+                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1679289725/Ecommerce_fdqdiz.png"
+                    link="https://www.figma.com/file/AURhP3Ehr7gDgFtL9nwWPj/Cattleya-Sports?node-id=0%3A1&t=9PKcMKREZC9hI6Pe-1"
+                  />
+                  <Design
+                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290030/image_processing20230108-18237-1rlz2jk_xxtepw.png"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290030/image_processing20230108-18237-1rlz2jk_xxtepw.png"
+                  />
+                  <Design
+                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290257/image_processing20230108-19556-1i9t1pm_dsxwga.png"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290257/image_processing20230108-19556-1i9t1pm_dsxwga.png"
+                  />
+                  <Design
+                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524620/prettyform_jmzelz.webp"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524620/prettyform_jmzelz.webp"
                   />
                 </div>
               </div>

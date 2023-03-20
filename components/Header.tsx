@@ -86,7 +86,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
               src="/favicon.svg"
               alt="Logo Facebook"
             />
-            <h1 className="font-bold text-xl">Social Portfolio</h1>
+            <h1 className="font-bold text-xl">Portfolio</h1>
           </div>
         </div>
         <div className="flex items-center gap-3">
