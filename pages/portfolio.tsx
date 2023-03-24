@@ -86,7 +86,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     height={3000}
                     priority
                     className="w-full h-full object-cover rounded-full"
-                    src="/profile.jpg"
+                    src="https://res.cloudinary.com/dovavvnjx/image/upload/v1679699742/me_nwsans.jpg"
                     alt="Profile"
                   />
                   <div className="absolute w-full h-full bg-white/5 rounded-full duration-100 hover:bg-white/10"></div>
@@ -389,12 +389,9 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                         }`}
                       />
                       <FaVuejs className="cursor-pointer duration-150 text-emerald-400" />
-                      <FaAngular className="cursor-pointer duration-150 text-red-500" />
                       <SiTypescript className="cursor-pointer duration-15 text-blue-500" />
                       <FaNodeJs className="cursor-pointer duration-150 text-green-400" />
                       <FaPhp className="cursor-pointer duration-150 text-blue-400" />
-                      <FaJava className="cursor-pointer duration-150 text-blue-600" />
-                      <SiSpring className="cursor-pointer duration-150 text-green-500" />
                       <SiTailwindcss className="cursor-pointer duration-150 text-blue-200" />
                       <SiBootstrap className="cursor-pointer duration-150 text-purple-500" />
                       <SiChakraui className="cursor-pointer duration-150 text-blue-200" />
