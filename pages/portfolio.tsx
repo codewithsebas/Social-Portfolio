@@ -13,8 +13,6 @@ import {
   FaDribbble,
   FaDev,
   FaVuejs,
-  FaAngular,
-  FaJava,
 } from "react-icons/fa";
 import { FcOpenedFolder, FcFile, FcBriefcase, FcHome } from "react-icons/fc";
 import {
@@ -30,7 +28,6 @@ import {
   SiFigma,
   SiPostman,
   SiSass,
-  SiSpring,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import Header from "../components/Header";
@@ -495,27 +492,6 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     <div className="flex flex-wrap w-full lg:justify-start">
                       <Dev
                         mode={mode}
-                        image="/profile13.jpg"
-                        title="Jose Ramon Montes Hermida"
-                        lindedIn="https://www.linkedin.com/in/joseramonmontes/"
-                      />
-
-                      <Dev
-                        mode={mode}
-                        image="/profile11.jpg"
-                        title="Sara Montagud Rodríguez"
-                        lindedIn="https://www.linkedin.com/in/sara-montagud-rodr%C3%ADguez/"
-                      />
-
-                      <Dev
-                        mode={mode}
-                        image="/profile7.jpg"
-                        title="Valeria Maldonado"
-                        lindedIn="https://www.linkedin.com/in/valeria-maldonado-69696a210/"
-                      />
-
-                      <Dev
-                        mode={mode}
                         image="/profile1.jpg"
                         title="Laura Andrea Gómez"
                         lindedIn="https://www.linkedin.com/in/laura-andrea-g%C3%B3mez-carmona-651a0aa0/"
@@ -523,35 +499,35 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
 
                       <Dev
                         mode={mode}
-                        image="/profile6.jpg"
-                        title="Laura Pregonero"
-                        lindedIn="https://www.linkedin.com/in/laura-camila-pregonero-mart%C3%ADnez-07449b22b/"
-                      />
-
-                      <Dev
-                        mode={mode}
-                        image="/profile8.jpg"
+                        image="/profile2.jpg"
                         title="Lucía González"
                         lindedIn="https://www.linkedin.com/in/luciagonzalezlara/"
                       />
 
                       <Dev
                         mode={mode}
-                        image="/profile9.jpg"
+                        image="/profile3.jpg"
                         title="Julian Pachon"
                         lindedIn="https://www.linkedin.com/in/juliantm/"
                       />
 
                       <Dev
                         mode={mode}
-                        image="/profile12.jpg"
-                        title="Ines Castañeda"
-                        lindedIn="www.linkedin.com/in/ines-castañeda-886a46212"
+                        image="/profile4.jpg"
+                        title="Sara Montagud Rodríguez"
+                        lindedIn="https://www.linkedin.com/in/sara-montagud-rodr%C3%ADguez/"
                       />
 
                       <Dev
                         mode={mode}
-                        image="/profile14.jpg"
+                        image="/profile5.jpg"
+                        title="Jose Ramon Montes Hermida"
+                        lindedIn="https://www.linkedin.com/in/joseramonmontes/"
+                      />
+
+                      <Dev
+                        mode={mode}
+                        image="/profile6.jpg"
                         title="Omar González Cuen"
                         lindedIn="https://www.linkedin.com/in/orglez/"
                       />
