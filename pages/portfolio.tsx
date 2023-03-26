@@ -132,8 +132,8 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     aria-label="Curriculum"
                     rel="noreferrer"
                     target="_blank"
-                    download="FullStack Developer Joab Giraldo.pdf"
-                    href="/download/FullStack Developer Joab Giraldo.pdf"
+                    download="FullStack Developer.pdf"
+                    href="/download/FullStack Developer.pdf"
                     className={`grow justify-center flex items-center gap-2  py-2 px-3 rounded-md cursor-pointer border ${
                       mode
                         ? "bg-white border text-zinc-700 hover:bg-white/20"
