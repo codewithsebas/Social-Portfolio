@@ -17,4 +17,4 @@ Si tienes preguntas o te gustaría hablar sobre un proyecto específico, no dude
 
 ## Screenshots
 
-![App Real State](https://res.cloudinary.com/dovavvnjx/image/upload/v1678686236/Captura_de_pantalla_2023-03-13_004327_ekhjem.png)
+![App Real State](https://res.cloudinary.com/dovavvnjx/image/upload/v1679809300/image_4_jkj2ba.png)
