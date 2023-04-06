@@ -88,7 +88,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   />
                   <div className="absolute w-full h-full bg-white/5 rounded-full duration-100 hover:bg-white/10"></div>
                 </a>
-                <div className="flex flex-col gap-2 py-6 ml-0 mt-20 items-center lg:ml-36 lg:items-start lg:mt-0">
+                <div className="flex flex-col gap-2 py-6 ml-0 mt-20 items-center lg:ml-40 lg:items-start lg:mt-0">
                   <p className="text-4xl font-bold text-center">
                     Sebastián Giraldo
                   </p>
@@ -97,7 +97,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                       mode ? "text-black/60" : "text-white"
                     }`}
                   >
-                    Frontend Developer | Web Programming | Design ⭐
+                    Frontend Developer | JavaScript | TypeScript | React ⭐
                   </p>
                 </div>
               </div>
@@ -132,8 +132,8 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     aria-label="Curriculum"
                     rel="noreferrer"
                     target="_blank"
-                    download="FullStack Developer.pdf"
-                    href="/download/FullStack Developer.pdf"
+                    download="Frontend Developer Sebastián Giraldo.pdf"
+                    href="/download/cv.pdf"
                     className={`grow justify-center flex items-center gap-2  py-2 px-3 rounded-md cursor-pointer border ${
                       mode
                         ? "bg-white border text-zinc-700 hover:bg-white/20"
@@ -337,10 +337,12 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                           mode ? "text-zinc-500" : "text-zinc-300"
                         }`}
                       >
-                        Passionate about Web Development. I consider myself a
-                        responsible, respectful person and I am constantly
-                        looking for new opportunities to improve my skills and
-                        knowledge.
+                        During my time in the industry, I have had the
+                        opportunity to work on a variety of exciting projects,
+                        from mobile application development to building websites
+                        and business management systems. This has allowed me to
+                        gain a great deal of hands-on experience in different
+                        areas of programming.
                       </p>
                       <p
                         className={`cursor-text font-medium ${
@@ -357,16 +359,6 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                         >
                           OpenBootcamp
                         </a>{" "}
-                        and waiting for a response from{" "}
-                        <a
-                          aria-label="Academlo"
-                          rel="noreferrer"
-                          target="_blank"
-                          className="text-blue-500 underline"
-                          href="https://www.academlo.com/"
-                        >
-                          Academlo
-                        </a>{" "}
                         to improve my knowledge and skills.
                       </p>
                     </div>
@@ -377,8 +369,8 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     <div className="flex flex-wrap gap-4 text-3xl">
                       <FaHtml5 className="cursor-pointer duration-150 text-orange-500" />
                       <FaCss3Alt className="cursor-pointer duration-150 text-blue-500" />
-                      <SiSass className="cursor-pointer duration-150 text-rose-400" />
                       <SiJavascript className="cursor-pointer duration-150 text-yellow-300" />
+                      <SiTypescript className="cursor-pointer duration-15 text-blue-500" />
                       <FaReact className="cursor-pointer duration-150 text-blue-400" />
                       <TbBrandNextjs
                         className={`cursor-pointer duration-150 ${
@@ -386,7 +378,6 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                         }`}
                       />
                       <FaVuejs className="cursor-pointer duration-150 text-emerald-400" />
-                      <SiTypescript className="cursor-pointer duration-15 text-blue-500" />
                       <FaNodeJs className="cursor-pointer duration-150 text-green-400" />
                       <FaPhp className="cursor-pointer duration-150 text-blue-400" />
                       <SiTailwindcss className="cursor-pointer duration-150 text-blue-200" />
@@ -619,7 +610,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   title="FullStack Developer & UI/UX Designer"
                   company="Cattleya"
                   country="Colombia"
-                  date="Oct 2022 - Actualmente"
+                  date="Oct 2022 - Actuality"
                   description="At Cattleya I have started working on a personal project for the company. for the company, which is my parents' company. The company develops in garments, clothing and sportswear creation. creation of sportswear. I am currently developing an Ecommerce, whose purpose is to improve the sales of the company, with online payment methods such as Stripe, Mercado Pago, PayPal."
                   techMain="React, Next, Typescript, Node, MondoDB, Tailwindcss"
                 />
@@ -631,7 +622,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   title="Frontend Developer & UI/UX Designer"
                   company="Cretten"
                   country="Colombia - Mexico"
-                  date="Oct 2022 - Actualmente"
+                  date="Oct 2022 - Actuality"
                   description="Cretten is a mini-company that I am developing with a great team of developers a great team of developers, colleagues from Colombia and Mexico. Colombia and Mexico. Cretten is a Web gaming platform. We are currently in development of design and programming."
                   techMain="React, Vite, Typescript, Jest, Node, MondoDB, Tailwindcss"
                 />
