@@ -52,7 +52,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
       <div className="w-full max-w-[60rem] relative">
         <Header mode={mode} setMode={setMode} menu={menu} setMenu={setMenu} />
         <div className="w-full h-full flex flex-col justify-center items-center">
-          <div className="w-full h-[15rem] md:h-[22.7rem] flex items-end justify-end overflow-hidden">
+          <div className="w-full h-[15rem] md:h-[10rem] flex items-end justify-end overflow-hidden">
             <Image
               className="w-full h-full object-cover"
               src="https://res.cloudinary.com/dovavvnjx/image/upload/v1677451999/banner_pvmpnf.jpg"
@@ -88,7 +88,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   />
                   <div className="absolute w-full h-full bg-white/5 rounded-full duration-100 hover:bg-white/10"></div>
                 </a>
-                <div className="flex flex-col gap-2 py-6 ml-0 mt-20 items-center lg:ml-36 lg:items-start lg:mt-0">
+                <div className="flex flex-col gap-2 py-6 ml-0 mt-20 items-center lg:ml-20 lg:items-start lg:mt-0">
                   <p className="text-4xl font-bold text-center">
                     Sebastián Giraldo
                   </p>
@@ -97,7 +97,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                       mode ? "text-black/60" : "text-white"
                     }`}
                   >
-                    Frontend Developer | Web Programming | Design ⭐
+                    Software Engineer | Design UI/UX ⭐
                   </p>
                 </div>
               </div>
@@ -132,8 +132,8 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     aria-label="Curriculum"
                     rel="noreferrer"
                     target="_blank"
-                    download="FullStack Developer.pdf"
-                    href="/download/FullStack Developer.pdf"
+                    download="SoftwareEngineer.pdf"
+                    href="/download/Software Engineer.pdf"
                     className={`grow justify-center flex items-center gap-2  py-2 px-3 rounded-md cursor-pointer border ${
                       mode
                         ? "bg-white border text-zinc-700 hover:bg-white/20"
@@ -171,24 +171,21 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                 <div className="w-full mt-1 flex flex-col gap-4">
                   <Design
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678682527/Dark_fc5oyr.png"
-                    link="https://www.figma.com/file/3AYk0iGg87LuhvL3CRanoG/DPI-Web-Official-Design?node-id=1%3A2&t=vjwgvk8aVCHg6CMT-1"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1678682527/Dark_fc5oyr.png"
                   />
                   <Design
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678139447/Frame_24_dm0d9e.png"
-                    link="https://www.figma.com/file/GZ4iUAXavkjrATwmezaR3d/StudioGhibli-Design?node-id=0%3A1&t=OOAdkNqnnXBZATLx-1"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1678139447/Frame_24_dm0d9e.png"
                   />
                   <Design
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1679289725/Ecommerce_fdqdiz.png"
-                    link="https://www.figma.com/file/AURhP3Ehr7gDgFtL9nwWPj/Cattleya-Sports?node-id=0%3A1&t=9PKcMKREZC9hI6Pe-1"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1679289725/Ecommerce_fdqdiz.png"
                   />
                   <Design
-                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290030/image_processing20230108-18237-1rlz2jk_xxtepw.png"
-                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290030/image_processing20230108-18237-1rlz2jk_xxtepw.png"
+                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1682480155/Wireframe_WEB_g1hycx.png"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1682480155/Wireframe_WEB_g1hycx.png"
                   />
-                  <Design
-                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290257/image_processing20230108-19556-1i9t1pm_dsxwga.png"
-                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1679290257/image_processing20230108-19556-1i9t1pm_dsxwga.png"
-                  />
+
                   <Design
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524620/prettyform_jmzelz.webp"
                     link="https://res.cloudinary.com/dovavvnjx/image/upload/v1677524620/prettyform_jmzelz.webp"
@@ -246,6 +243,36 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     : "flex flex-col"
                 }`}
               >
+                <Project
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1681061473/Captura_de_pantalla_2023-04-09_113044_h5zdfw.png"
+                  title="Spotify!"
+                  link="https://github.com/codewithsebas/Spotify"
+                  day={10}
+                  year={2023}
+                  description="This project I'm developing is about a music application that is inspired by the popular Spotify platform. It is being built using several cutting-edge technologies, such as React for UI development and Axios for handling HTTP requests."
+                />
+                <Project
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1682481927/Imagen_de_WhatsApp_2023-04-25_a_las_23.02.02_zyppp9.jpg"
+                  title="Notes App with Backend!"
+                  link="https://github.com/codewithsebas/todo-app-mern"
+                  day={5}
+                  year={2023}
+                  description="This notes application I created with Next.js, Redux, Node.js and MongoDB is a complete and effective solution for online notes management. The combination of an intuitive user interface with a solid backend and a reliable database makes this application a tool."
+                />
+
+                <Project
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1682480583/Imagen_de_WhatsApp_2023-04-25_a_las_22.42.01_ev2jhi.jpg"
+                  title="Notes App!"
+                  link="https://github.com/codewithsebas/Todo-List"
+                  deploy="https://todo-list-neon.vercel.app/"
+                  day={10}
+                  year={2023}
+                  description="The application that I have created is a practical and functional note-taking tool that allows users to create and save notes easily. With this application, users can intuitively add, edit, delete, and mark notes as completed online."
+                />
+
                 <Project
                   mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1673655903/Captura_de_pantalla_2023-01-13_191504_m0kjtj.png"
@@ -377,7 +404,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     <div className="flex flex-wrap gap-4 text-3xl">
                       <FaHtml5 className="cursor-pointer duration-150 text-orange-500" />
                       <FaCss3Alt className="cursor-pointer duration-150 text-blue-500" />
-                      <SiSass className="cursor-pointer duration-150 text-rose-400" />
+
                       <SiJavascript className="cursor-pointer duration-150 text-yellow-300" />
                       <FaReact className="cursor-pointer duration-150 text-blue-400" />
                       <TbBrandNextjs
@@ -455,18 +482,6 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                         rel="noreferrer"
                         target="_blank"
                         aria-label="Github"
-                        className="flex gap-2 text-base text-violet-500 hover:underline"
-                        href="https://www.twitch.tv/codewithsebas"
-                      >
-                        <FaTwitch className="text-2xl text-violet-500" />
-                        Twitch
-                      </a>
-                    </div>
-                    <div className="w-full text-xl">
-                      <a
-                        rel="noreferrer"
-                        target="_blank"
-                        aria-label="Github"
                         className="flex gap-2 text-base text-rose-300 font-semibold hover:underline"
                         href="https://dribbble.com/codewithsebas"
                       >
@@ -509,13 +524,6 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                         image="/profile3.jpg"
                         title="Julian Pachon"
                         lindedIn="https://www.linkedin.com/in/juliantm/"
-                      />
-
-                      <Dev
-                        mode={mode}
-                        image="/profile4.jpg"
-                        title="Sara Montagud Rodríguez"
-                        lindedIn="https://www.linkedin.com/in/sara-montagud-rodr%C3%ADguez/"
                       />
 
                       <Dev
@@ -589,7 +597,6 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                 }`}
               >
                 <Experience
-                  grid={grid}
                   mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678135887/Captura_de_pantalla_2023-03-06_154946_crxg51.png"
                   title="FullStack Developer & UI/UX Designer"
@@ -597,11 +604,9 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   country="Colombia"
                   date="Feb 2021 - Feb 2022"
                   description="Technical support and web development, Full Stack for 1 year, helping them in 1 year, helping them in the development, to solve problems, doubts and to face the insecurities and frustrations that arose along the way. Develop Web App for people with disabilities disabilities, help and improve the family nucleus with the person with disabilities. Using programming languages such as JavaScript and PHP, as well as using a strong MySQL database."
-                  techMain="PHP, HTML, CSS, JavaScript, React, MySQL"
                 />
 
                 <Experience
-                  grid={grid}
                   mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678139447/Frame_24_dm0d9e.png"
                   title="UI/UX Designer"
@@ -609,10 +614,19 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   country="España"
                   date="Sep 2022 - Nov 2022"
                   description="The experience at Open Bootcamp was incredible, too much teamwork, development activities between teamwork, development activities between 3 or 4 people, so that the community gets people, for the community to get a real work experience. real work experience. I was in charge of designing the Apps that all the teams were assigned to develop. teams were assigned to develop."
-                  techMain="Figma"
                 />
 
                 <Experience
+                  mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1682480155/Wireframe_WEB_g1hycx.png"
+                  title="Frontend Developer & UI/UX Designer"
+                  company="Master Code Software"
+                  country="Colombia"
+                  description="Maintained a 100% client satisfaction rate by developing using languages and technologies such as Nextjs, JavaScript, HTML, CSS. Streamlined UI/UX design processes by 100% using Figma and design architecture.
+                  "
+                />
+
+                {/* <Experience
                   grid={grid}
                   mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678137594/Captura_de_pantalla_2023-03-06_161933_sqjmue.png"
@@ -622,9 +636,9 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   date="Oct 2022 - Actualmente"
                   description="At Cattleya I have started working on a personal project for the company. for the company, which is my parents' company. The company develops in garments, clothing and sportswear creation. creation of sportswear. I am currently developing an Ecommerce, whose purpose is to improve the sales of the company, with online payment methods such as Stripe, Mercado Pago, PayPal."
                   techMain="React, Next, Typescript, Node, MondoDB, Tailwindcss"
-                />
+                /> */}
 
-                <Experience
+                {/* <Experience
                   grid={grid}
                   mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1673371513/web.psd4_gjk0ck.png"
@@ -634,7 +648,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   date="Oct 2022 - Actualmente"
                   description="Cretten is a mini-company that I am developing with a great team of developers a great team of developers, colleagues from Colombia and Mexico. Colombia and Mexico. Cretten is a Web gaming platform. We are currently in development of design and programming."
                   techMain="React, Vite, Typescript, Jest, Node, MondoDB, Tailwindcss"
-                />
+                /> */}
               </div>
             </div>
           </div>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { BiWorld } from "react-icons/bi";
 
 export default function Experience({
-  grid,
   mode,
   image,
   title,
@@ -12,7 +11,6 @@ export default function Experience({
   country,
   date,
   description,
-  techMain,
 }: ExperienceInterface) {
   return (
     <div
@@ -29,7 +27,7 @@ export default function Experience({
           priority
           src={image}
           alt="Experience"
-          className="md:rounded-t-md object-cover object-top w-full h-64 border-b border-white/5"
+          className="md:rounded-t-md object-cover object-top w-full border-b border-white/5"
         />
 
         <div className="flex flex-wrap items-center gap-3 pt-3 pb-4 px-4">

@@ -15,7 +15,7 @@ export default function Project({
 }: ProjectInterface) {
   return (
     <div
-      className={`flex flex-col gap-2 w-full h-full md:rounded-md border cursor-pointer ${
+      className={`flex flex-col gap-2 w-full h-full md:rounded-md border cursor-pointer duration-200 ${
         mode
           ? "bg-white text-zinc-700 border-black/5 hover:border-blue-500/50 hover:shadow-md"
           : "bg-[#161616] border-zinc-500/20 hover:border-blue-500/50 hover:shadow-xl hover:bg-white/10"
@@ -28,7 +28,7 @@ export default function Project({
           priority
           src={image}
           alt=""
-          className="md:rounded-t-md object-cover object-top w-full h-64 border-b border-white/5"
+          className="md:rounded-t-md object-cover object-top w-full border-b border-white/5"
         />
 
         <div className="flex items-center gap-3 py-4 px-4 ">
