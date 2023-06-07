@@ -14,7 +14,3 @@ Si tienes preguntas o te gustaría hablar sobre un proyecto específico, no dude
 
 ¡Gracias por visitar mi portafolio y espero que disfrutes explorando mis trabajos!!
 #
-
-## Screenshots
-
-![App Real State](https://res.cloudinary.com/dovavvnjx/image/upload/v1678686236/Captura_de_pantalla_2023-03-13_004327_ekhjem.png)
