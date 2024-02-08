@@ -28,6 +28,7 @@ import {
   SiFigma,
   SiPostman,
   SiSass,
+  SiAngular,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import Header from "../components/Header";
@@ -45,14 +46,16 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
   const [menu, setMenu] = useState(1);
   return (
     <div
-      className={`w-full relative flex flex-col justify-start items-center border-b border-white/5 ${
+      className={`w-full  ${
+        menu === 1 ? "h-full md:h-screen" : "h-full"
+      } relative flex flex-col justify-start items-center border-b border-white/5 ${
         mode ? "bg-[#f8f8f8] text-zinc-700" : "bg-[#1b1b1b] text-zinc-50"
       }`}
     >
       <div className="w-full max-w-[60rem] relative">
         <Header mode={mode} setMode={setMode} menu={menu} setMenu={setMenu} />
-        <div className="w-full h-full flex flex-col justify-center items-center">
-          <div className="w-full h-[15rem] md:h-[10rem] flex items-end justify-end overflow-hidden">
+        <div className="w-full  flex flex-col justify-center items-center ">
+          <div className="w-full h-[16rem] flex items-end justify-end overflow-hidden">
             <Image
               className="w-full h-full object-cover"
               src="https://res.cloudinary.com/dovavvnjx/image/upload/v1677451999/banner_pvmpnf.jpg"
@@ -74,7 +77,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   rel="noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/code-sebastian-giraldo/"
-                  className={`absolute bottom-32 md:bottom-28 lg:bottom-3 lg:left-0 w-44 h-44 rounded-full flex items-center justify-center cursor-pointer border-4 ${
+                  className={`absolute bottom-28 md:bottom-28 lg:bottom-3 lg:left-0 w-44 h-44 rounded-full flex items-center justify-center cursor-pointer border-4 ${
                     mode ? "border-[#f8f8f8]" : "border-[#1b1b1b]"
                   }`}
                 >
@@ -83,25 +86,23 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     height={3000}
                     priority
                     className="w-full h-full object-cover rounded-full"
-                    src="https://res.cloudinary.com/dovavvnjx/image/upload/v1679699742/me_nwsans.jpg"
+                    src="https://res.cloudinary.com/dovavvnjx/image/upload/v1707311174/WhatsApp_Image_2024-02-05_at_12.34.36_PM_jqpsyf.jpg"
                     alt="Profile"
                   />
                   <div className="absolute w-full h-full bg-white/5 rounded-full duration-100 hover:bg-white/10"></div>
                 </a>
-                <div className="flex flex-col gap-2 py-6 ml-0 mt-20 items-center lg:ml-20 lg:items-start lg:mt-0">
-                  <p className="text-4xl font-bold text-center">
-                    Sebastián Giraldo
-                  </p>
+                <div className="flex flex-col gap-2 py-6 ml-0 mt-20 items-center lg:ml-5 lg:items-start lg:mt-0">
+                  <p className="text-4xl font-bold text-center">Joab Giraldo</p>
                   <p
                     className={`w-full  font-medium text-base text-center lg:text-left px-3 lg:px-0 ${
                       mode ? "text-black/60" : "text-white"
                     }`}
                   >
-                    Software Engineer | Design UI/UX ⭐
+                    FrontEnd Dev - UI Lover ⭐
                   </p>
                 </div>
               </div>
-              <div className="w-full h-full lg:justify-end justify-center items-center pb-5 lg:w-1/2 flex lg:py-5">
+              <div className="w-full lg:justify-end justify-center items-center pb-5 lg:w-1/2 flex lg:py-5">
                 <div className="w-80 flex flex-wrap gap-2 justify-center px-2 lg:px-0 lg:w-60">
                   <a
                     aria-label="GitHub"
@@ -121,7 +122,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     aria-label="LinkedIn"
                     rel="noreferrer"
                     target="_blank"
-                    href="https://www.linkedin.com/in/codewithsebas/"
+                    href="https://www.linkedin.com/in/joabgiraldo"
                     className="grow justify-center flex items-center gap-2 bg-blue-600 border-transparent text-white py-2 px-3 rounded-md duration-150 cursor-pointer hover:bg-blue-500"
                   >
                     <FaLinkedin />
@@ -132,8 +133,8 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     aria-label="Curriculum"
                     rel="noreferrer"
                     target="_blank"
-                    download="SoftwareEngineer.pdf"
-                    href="/download/Software Engineer.pdf"
+                    download="FrontEnd.pdf"
+                    href="/download/FrontEnd.pdf"
                     className={`grow justify-center flex items-center gap-2  py-2 px-3 rounded-md cursor-pointer border ${
                       mode
                         ? "bg-white border text-zinc-700 hover:bg-white/20"
@@ -141,7 +142,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                     }`}
                   >
                     <FcFile />
-                    <h2 className="font-medium text-sm">Curriculum</h2>
+                    <h2 className="font-medium text-sm">Descargar Hoja de vida</h2>
                   </a>
                 </div>
               </div>
@@ -149,10 +150,10 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
           </div>
         </div>
 
-        <div className="h-full flex flex-col items-start pt-3 lg:px-0 gap-3 pb-3 ">
+        <div className="flex flex-col items-start pt-3 lg:px-0 gap-3 pb-3 ">
           <div
             className={`h-full flex flex-col lg:flex-row items-start gap-3 duration-200 ${
-              menu === 2 ? null : "hidden"
+              menu === 3 ? null : "hidden"
             }`}
           >
             <div className="w-full lg:w-2/5 flex flex-col gap-3">
@@ -169,6 +170,10 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   </span>
                 </h1>
                 <div className="w-full mt-1 flex flex-col gap-4">
+                  <Design
+                    image="https://res.cloudinary.com/dovavvnjx/image/upload/v1683009255/UI_g1lvbd.png"
+                    link="https://res.cloudinary.com/dovavvnjx/image/upload/v1683009255/UI_g1lvbd.png"
+                  />
                   <Design
                     image="https://res.cloudinary.com/dovavvnjx/image/upload/v1678682527/Dark_fc5oyr.png"
                     link="https://res.cloudinary.com/dovavvnjx/image/upload/v1678682527/Dark_fc5oyr.png"
@@ -357,50 +362,23 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   }`}
                 >
                   <div className="flex flex-col gap-1">
-                    <h1 className="font-medium text-2xl">About me</h1>
+                    <h1 className="font-medium text-2xl">Sobre mí</h1>
                     <div className="flex flex-col items-start gap-2">
                       <p
                         className={`cursor-text font-medium ${
                           mode ? "text-zinc-500" : "text-zinc-300"
                         }`}
                       >
-                        Passionate about Web Development. I consider myself a
-                        responsible, respectful person and I am constantly
-                        looking for new opportunities to improve my skills and
-                        knowledge.
-                      </p>
-                      <p
-                        className={`cursor-text font-medium ${
-                          mode ? "text-zinc-500" : "text-zinc-300"
-                        }`}
-                      >
-                        Also studying at Bootcamp FullStack at{" "}
-                        <a
-                          aria-label="OpenBootcamp"
-                          rel="noreferrer"
-                          target="_blank"
-                          className="text-blue-500 underline"
-                          href="https://campus.open-bootcamp.com/"
-                        >
-                          OpenBootcamp
-                        </a>{" "}
-                        and waiting for a response from{" "}
-                        <a
-                          aria-label="Academlo"
-                          rel="noreferrer"
-                          target="_blank"
-                          className="text-blue-500 underline"
-                          href="https://www.academlo.com/"
-                        >
-                          Academlo
-                        </a>{" "}
-                        to improve my knowledge and skills.
+                        Desarrollador Web con 2 años de experiencia en Frontend,
+                        especializado en React, Typescript y diséño con Figma.
+                        En los últimos años, he estado trabajando en Startups,
+                        formando parte del equipo fundador.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <h1 className="font-medium text-2xl">Skills</h1>
+                    <h1 className="font-medium text-2xl">Aptitudes</h1>
                     <div className="flex flex-wrap gap-4 text-3xl">
                       <FaHtml5 className="cursor-pointer duration-150 text-orange-500" />
                       <FaCss3Alt className="cursor-pointer duration-150 text-blue-500" />
@@ -412,15 +390,16 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                           mode ? "text-black" : "text-white"
                         }`}
                       />
-                      <FaVuejs className="cursor-pointer duration-150 text-emerald-400" />
+                      <SiAngular className="cursor-pointer duration-15 text-red-500" />
+                      {/* <FaVuejs className="cursor-pointer duration-150 text-emerald-400" /> */}
                       <SiTypescript className="cursor-pointer duration-15 text-blue-500" />
                       <FaNodeJs className="cursor-pointer duration-150 text-green-400" />
                       <FaPhp className="cursor-pointer duration-150 text-blue-400" />
                       <SiTailwindcss className="cursor-pointer duration-150 text-blue-200" />
                       <SiBootstrap className="cursor-pointer duration-150 text-purple-500" />
-                      <SiChakraui className="cursor-pointer duration-150 text-blue-200" />
+                      {/* <SiChakraui className="cursor-pointer duration-150 text-blue-200" /> */}
                       <SiFigma className="cursor-pointer duration-150 text-purple-400" />
-                      <SiMongodb className="cursor-pointer duration-150 text-green-500" />
+                      {/* <SiMongodb className="cursor-pointer duration-150 text-green-500" /> */}
                       <SiMysql className="cursor-pointer duration-150 text-blue-400" />
                       <FaGitAlt className="cursor-pointer duration-150 text-orange-500" />
                       <FaGithub
@@ -428,20 +407,20 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                           mode ? "text-black" : "text-white"
                         }`}
                       />
-                      <SiBitbucket className="cursor-pointer duration-150 text-blue-400" />
+                      {/* <SiBitbucket className="cursor-pointer duration-150 text-blue-400" /> */}
                       <SiJirasoftware className="cursor-pointer duration-150 text-blue-400" />
                       <SiPostman className="cursor-pointer duration-150 text-orange-500" />
                     </div>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <h1 className="font-medium text-2xl">Languages</h1>
+                    <h1 className="font-medium text-2xl">Idiomas</h1>
                     <div className="flex items-start gap-3">
                       <p
                         className={`cursor-text font-semibold ${
                           mode ? "text-zinc-500" : "text-zinc-300"
                         }`}
                       >
-                        Spanish - Native <br />
+                        Español Nativo <br />
                       </p>
                       |
                       <p
@@ -449,7 +428,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                           mode ? "text-zinc-500" : "text-zinc-300"
                         }`}
                       >
-                        English - A2 / B1
+                        Ingles A2 - B1
                         <br />
                       </p>
                     </div>
@@ -464,20 +443,21 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   }`}
                 >
                   <div className="w-full flex flex-col gap-4">
-                    <h1 className="font-medium text-2xl">Details</h1>
+                    <h1 className="font-medium text-2xl">Detalles</h1>
                     <div className="w-full flex items-center gap-2 text-xl">
                       <FcHome className="text-2xl" />
                       <h1 className="flex gap-1 text-base">
-                        From <p className="font-semibold">Colombia</p>
+                        Ibagué - Tolima |{" "}
+                        <p className="font-semibold">Colombia</p>
                       </h1>
                     </div>
 
                     <div className="w-full flex items-center gap-2 text-xl">
                       <FcBriefcase className="text-2xl" />
-                      <h1 className="flex gap-1 text-base">Open To Work</h1>
+                      <h1 className="flex gap-1 text-base">Disponible</h1>
                     </div>
 
-                    <div className="w-full text-xl">
+                    {/* <div className="w-full text-xl">
                       <a
                         rel="noreferrer"
                         target="_blank"
@@ -500,11 +480,11 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                         <FaDev className="text-2xl" />
                         Dev
                       </a>
-                    </div>
+                    </div> */}
                     <h1 className="font-medium text-2xl mt-1">
-                      Developer friends
+                      Recomendaciones
                     </h1>
-                    <div className="flex flex-wrap w-full lg:justify-start">
+                    <div className="flex flex-wrap gap-1 w-full lg:justify-start">
                       <Dev
                         mode={mode}
                         image="/profile1.jpg"
@@ -544,6 +524,15 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div
+            className={`flex flex-col items-start gap-3 duration-200 ${
+              menu === 2
+                ? "opacity-100 translate-x-0"
+                : "opacity-0 translate-x-20 pointer-events-none -z-30 hidden"
+            }`}
+          >
             <div className="w-full flex flex-col gap-3 ">
               <div
                 className={`w-full md:rounded-md border ${
@@ -655,7 +644,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
 
           <div
             className={`flex flex-col items-start gap-3 duration-200 ${
-              menu === 3
+              menu === 4
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-20 pointer-events-none -z-30 hidden"
             }`}

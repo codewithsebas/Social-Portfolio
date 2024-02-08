@@ -20,7 +20,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
       ></div>
       <div
         onClick={() => setMenuMobile(!menuMobile)}
-        className={`w-full h-48 fixed bottom-0 right-0 z-40 duration-200 p-3 border-t flex items-center 
+        className={`w-full h-auto fixed bottom-0 right-0 z-40 duration-200 p-3 border-t flex items-center 
         ${
           menuMobile
             ? "opacity-100 translate-y-0"
@@ -28,7 +28,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
         } ${mode ? "bg-white" : "bg-[#1d1d1d]  border-zinc-500/20"}`}
       >
         <ul className="w-full font-medium text-base flex flex-col justify-center gap-0 sincopy">
-          <li
+        <li
             onClick={() => setMenu(1)}
             className={`grow duration-150 font-bold cursor-pointer py-2 px-2 border-b-2 h-14 flex items-center justify-between ${
               menu === 1
@@ -36,7 +36,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
                 : "border-transparent"
             }`}
           >
-            <span className="pr-1 text-lg">About me & Experience</span>
+            <span className="pr-1 text-lg">Sobre mí</span>
             <span className="text-2xl">
               <FcBriefcase />
             </span>
@@ -49,15 +49,28 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
                 : "border-transparent"
             }`}
           >
-            <span className="pr-1 text-lg">Designs & Projects</span>
+            <span className="pr-1 text-lg">Experiencia</span>
             <span className="text-2xl">
-              <FcOpenedFolder />
+              <FcBriefcase />
             </span>
           </li>
           <li
             onClick={() => setMenu(3)}
             className={`grow duration-150 font-bold cursor-pointer py-2 px-2 border-b-2 h-14 flex items-center justify-between ${
               menu === 3
+                ? "text-blue-500 border-blue-500"
+                : "border-transparent"
+            }`}
+          >
+            <span className="pr-1 text-lg">Diseños y proyectos</span>
+            <span className="text-2xl">
+              <FcOpenedFolder />
+            </span>
+          </li>
+          <li
+            onClick={() => setMenu(4)}
+            className={`grow duration-150 font-bold cursor-pointer py-2 px-2 border-b-2 h-14 flex items-center justify-between ${
+              menu === 4
                 ? "text-blue-500 border-blue-500"
                 : "border-transparent"
             }`}
@@ -91,7 +104,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
         </div>
         <div className="flex items-center gap-3">
           <ul className="font-medium text-base  h-full hidden md:flex flex-wrap justify-center gap-0 sincopy">
-            <li
+          <li
               onClick={() => setMenu(1)}
               className={`grow duration-150 cursor-pointer py-2 px-2 border-b-2 h-14 flex items-center ${
                 menu === 1
@@ -99,7 +112,7 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
                   : "border-transparent"
               }`}
             >
-              <span className="pr-1">About me & Experience</span>
+              <span className="pr-1">Sobre mí</span>
             </li>
             <li
               onClick={() => setMenu(2)}
@@ -109,12 +122,22 @@ const Header = ({ mode, setMode, menu, setMenu }: ModeInterface) => {
                   : "border-transparent"
               }`}
             >
-              <span className="pr-1">Designs & Projects</span>
+              <span className="pr-1">Experiencia</span>
             </li>
             <li
               onClick={() => setMenu(3)}
               className={`grow duration-150 cursor-pointer py-2 px-2 border-b-2 h-14 flex items-center ${
                 menu === 3
+                  ? "text-blue-500 border-blue-500"
+                  : "border-transparent"
+              }`}
+            >
+              <span className="pr-1">Diseños y proyectos</span>
+            </li>
+            <li
+              onClick={() => setMenu(4)}
+              className={`grow duration-150 cursor-pointer py-2 px-2 border-b-2 h-14 flex items-center ${
+                menu === 4
                   ? "text-blue-500 border-blue-500"
                   : "border-transparent"
               }`}
