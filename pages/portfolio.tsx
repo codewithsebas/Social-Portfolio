@@ -250,6 +250,17 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
               >
                 <Project
                   mode={mode}
+                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1676183351/f_xfboge.png"
+                  title="Facebook clone Profile"
+                  link="https://github.com/codewithsebas/Facebook-App"
+                  deploy="https://facebook-app-three.vercel.app"
+                  day={14}
+                  year={2023}
+                  description="This project was developed in 3 hours and a half, thanks to a tutorial on YouTube, content creator and FullStack programmer, JavaScript Mastery thanks to him I could make this great project called Facebook App"
+                />
+                
+                <Project
+                  mode={mode}
                   image="https://res.cloudinary.com/dovavvnjx/image/upload/v1681061473/Captura_de_pantalla_2023-04-09_113044_h5zdfw.png"
                   title="Spotify!"
                   link="https://github.com/codewithsebas/Spotify"
@@ -309,16 +320,7 @@ export default function Portfolio({ mode, setMode }: PortfolioInterface) {
                   description="This project was developed in 3 hours and a half, thanks to a tutorial on YouTube, content creator and FullStack programmer, JavaScript Mastery thanks to him I could make this great project called Real State, I hope it will be useful for future projects, or so you can improve your knowledge of this project!"
                 />
 
-                <Project
-                  mode={mode}
-                  image="https://res.cloudinary.com/dovavvnjx/image/upload/v1676183351/f_xfboge.png"
-                  title="Facebook clone App"
-                  link="https://github.com/codewithsebas/Facebook-App"
-                  deploy="https://facebook-app-three.vercel.app/profile"
-                  day={14}
-                  year={2023}
-                  description="This project was developed in 3 hours and a half, thanks to a tutorial on YouTube, content creator and FullStack programmer, JavaScript Mastery thanks to him I could make this great project called Facebook App"
-                />
+                
 
                 <Project
                   mode={mode}
